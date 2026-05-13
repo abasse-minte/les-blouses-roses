@@ -1,0 +1,248 @@
+/* ============================
+   GLOBAL
+============================ */
+body {
+    font-family: 'anton', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+}
+
+section, .valeurs-container, .news-card, .newsletter-section {
+    background-color: white;
+}
+
+/* ============================
+   HERO
+============================ */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)),
+    url('../img/accueil/papi.png') center/cover no-repeat;
+    padding: 120px 20px 400px;
+    color: white;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 100px;
+    background: linear-gradient(90deg, #FF679B, #FBC3D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ============================
+   NAVBAR
+============================ */
+.navbar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.transparent {
+    background-color: transparent;
+    color: white;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   BOUTONS DON
+============================ */
+.donHero a {
+    display: inline-block;
+    background-color: #FF93B8;
+    color: white;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.donHero a:hover {
+    background-color: #D4004D;
+    color: #fff;
+}
+
+/* ============================
+   VALEURS
+============================ */
+.titre-general {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #FF538E;
+    margin: 40px 0;
+}
+
+.valeurs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.valeur-bloc {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border: 2px solid #ffb6c1;
+}
+
+.valeur-bloc.pink {
+    background-color: #ffb6c1;
+    color: #fff;
+}
+
+.valeur-bloc.white {
+    background-color: #fff;
+    color: #FF538E;
+}
+
+.valeur-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.valeur-nom {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.valeur-bloc p {
+    font-size: 35px;
+    line-height: 1.6;
+}
+
+/* ============================
+   ACTUS
+============================ */
+.news-card {
+    border-radius: 10px;
+    padding: 15px 15px 15px 40px;
+    margin: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 500px;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news-card h5 {
+    margin-top: 10px;
+    color: black;
+}
+
+.news-card .left-arrow {
+    position: absolute;
+    right: 20px;
+    top: 80%;
+    transform: translateY(-50%);
+    background-color: #FF538E;
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-arrows {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation-arrows button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #D4004D;
+}
+
+/* ============================
+   NEWSLETTER
+============================ */
+.newsletter-section {
+    background: url('../img/accueil/informer.png') center/contain no-repeat;
+    padding: 120px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.newsletter-section h2 {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 20px 25px;        /* plus d'espace à l'intérieur */
+    border-radius: 30px;       /* coins légèrement plus arrondis */
+    border: none;
+    width: 500px;              /* largeur plus grande */
+    font-size: 1.5rem;         /* texte plus gros */
+}
+
+.newsletter-form button {
+    padding: 20px 35px;        /* bouton plus grand */
+    border-radius: 30px;
+    border: none;
+    background-color: #D4004D;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;         /* texte plus gros */
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #FF93B8;
+}
+/* ============================
+   MARGES GÉNÉRALES
+============================ */
+h1, h2, h3, p, img, .valeur-bloc, .news-card {
+    margin-bottom: 50px;
+}
+
